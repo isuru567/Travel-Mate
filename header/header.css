@@ -1,0 +1,487 @@
+/* Font Definitions */
+@font-face {
+    font-family: "nunito-bold";
+    src: url("../_resources/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraBold";
+    src: url("../_resources/fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraLight";
+    src: url("../_resources/fonts/Nunito-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "nunito-light";
+    src: url("../_resources/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+    font-family: "nunito-medium";
+    src: url("../_resources/fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+    font-family: "nunito-regular";
+    src: url("../_resources/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunito-semiBold";
+    src: url("../_resources/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-bold";
+    src: url("../_resources/fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-extraBold";
+    src: url("../_resources/fonts/PlayfairDisplay-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-medium";
+    src: url("../_resources/fonts/PlayfairDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-regular";
+    src: url("../_resources/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-semiBold";
+    src: url("../_resources/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+
+
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #EEEFFC;
+    --dark-color: #030511;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* background-color: white; */
+    /* Ensure nav stays white */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.top-bar {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+}
+
+.top-bar .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.top-bar .contact-info,
+.top-bar .social-links {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.top-bar .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "nunito-bold";
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.header-contact {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.nav-social {
+    width: 1.2rem;
+    height: 1.2rem;
+    object-fit: contain;
+}
+
+.main-nav {
+    background-color: white;
+    padding: 0.4rem 0;
+}
+
+.logo img {
+    width: 5rem;
+    height: auto;
+}
+
+.main-nav .header-container {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.top-bar .contact-info {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.address1,
+.mail1 {
+    display: none !important;
+}
+
+.social-links {
+    margin-left: 1.5rem;
+}
+
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    justify-content: space-between;
+    z-index: 2000;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    /* left: 1; */
+    margin-right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-toggle span {
+    background: var(--primary-color);
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Nav Links */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    z-index: 1000;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-item a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-family: "nunito-semiBold";
+    /* font-weight: 400; */
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-item a:hover {
+    color: var(--primary-color);
+}
+
+/* Dropdown */
+.dropdown {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fa;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    z-index: 2500;
+    min-width: 120px;
+    border-radius: 6px;
+}
+
+.nav-item.active .dropdown {
+    display: block;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.dropdown li a {
+    padding: 8px 16px;
+    color: #666;
+    font-weight: normal;
+    border-bottom: 1px solid #e9ecef;
+    font-family: "nunito-regular", sans-serif;
+    font-size: 0.9rem !important;
+    transition: all 0.3s;
+}
+
+.dropdown li a:hover {
+    background-color: #e9ecef;
+    color: var(--primary-color);
+}
+
+/* Book Now Button */
+.nav-buttons {
+    display: none;
+}
+
+.book-now-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "nunito-ExtraBold", sans-serif;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+    border: 2px solid var(--primary-color);
+}
+
+.book-now-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* ============ Desktop Styles ============ */
+@media (min-width: 1000px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+        gap: 0;
+    }
+
+    .nav-item a {
+        padding: 30px 20px;
+        color: #333;
+        font-weight: 700;
+        border-bottom: none;
+        position: relative;
+        font-size: 1.3rem;
+        font-family: "nunito-ExtraBold";
+    }
+
+    .nav-item a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: var(--primary-color);
+        transition: all 0.3s;
+        transform: translateX(-50%);
+    }
+
+    .nav-item a:hover::after {
+        width: 80%;
+    }
+
+    .nav-item.has-dropdown:hover .dropdown {
+        display: block;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        min-width: 180px;
+        border-radius: 8px;
+        overflow: hidden;
+        border-top: 3px solid var(--primary-color);
+    }
+
+    .dropdown li a {
+        padding: 12px 20px;
+        color: #555;
+        font-size: 1.5rem;
+    }
+
+    .dropdown li:last-child a {
+        border-bottom: none;
+    }
+
+    .dropdown li a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    .nav-buttons {
+        display: block;
+    }
+
+    .book-now-btn {
+        font-size: 1rem;
+    }
+}
+
+/* ============ Large Desktop ============ */
+@media (min-width: 1200px) {
+    .nav-item a {
+        padding: 30px 25px;
+        font-size: 1.3rem;
+    }
+
+    .top-bar {
+        font-size: 13px;
+    }
+
+    .top-bar .contact-info {
+        gap: 40px;
+    }
+}
+
+/* ============ Mobile Responsive ============ */
+@media (max-width: 999px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .top-bar {
+        font-size: 12px;
+    }
+
+    .top-bar .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    /* .top-bar .contact-info {
+        display: none;
+    } */
+
+    .main-nav .header-container {
+        padding: 0 1rem;
+    }
+
+    .logo img {
+        height: 3rem;
+        width: auto;
+    }
+
+    .nav-links .dropdown {
+        display: block;
+    }
+}
+
+@media (min-width: 600px) {
+    .top-bar .contact-info {
+        display: flex !important;
+    }
+
+    .top-bar .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .address1,
+    .mail1 {
+        display: flex !important;
+    }
+}
+
+/* ============ Animation for Hamburger ============ */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+
+
+
+
+.nav-item a.active-link {
+    color: var(--primary-color) !important;
+    font-weight: 800;
+}
+
+
+@media (min-width: 1000px) {
+    .nav-item a.active-link::after {
+        display: none !important; 
+    }
+}
