@@ -1,0 +1,1104 @@
+@font-face {
+    font-family: "nunito-bold";
+    src: url("../_resources/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraBold";
+    src: url("../_resources/fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraLight";
+    src: url("../_resources/fonts/Nunito-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "nunito-light";
+    src: url("../_resources/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+    font-family: "nunito-mediam";
+    src: url("../_resources/fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+    font-family: "nunito-regular";
+    src: url("../_resources/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunito-semiBold";
+    src: url("../_resources/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-bold";
+    src: url("../_resources/fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-extraBold";
+    src: url("../_resources/fonts/PlayfairDisplay-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "payfair-Display-mediam";
+    src: url("../_resources/fonts/PlayfairDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-regular";
+    src: url("../_resources/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-semiBold";
+    src: url("../_resources/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #EEEFFC;
+    --dark-color: #030511;
+    --topic-fontSize-desktop: 3rem;
+    --subtopic-fontSize-desktop: 2rem;
+    --topic-fontSize-mobile: 1.5rem;
+    --subtopic-fontSize-mobile: 1.2rem;
+    --topic-fontSize-tablet: 1.8rem;
+    --subtopic-fontSize-tablet: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*============================================================== Hero Section ==============================================================*/
+
+.service--sec1--div1 {
+    background: url(../_resources/images/hero/3.webp) center/cover no-repeat;
+    width: 100%;
+    height: 70vh;
+    /* small default height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service--sec1--div1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a227e2c;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.service--sec1--div2 {
+    max-width: 1400px;
+    padding: 1rem;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.service--sec1--div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.service--sec1--div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding-top: 2rem;
+}
+
+.service--sec1--span1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "playfair-Display-extraBold";
+    color: var(--primary-color);
+}
+
+.service--sec1--span2 {
+    font-size: var(--subtopic-fontSize-mobile);
+    color: var(--secondary-color);
+    font-family: "nunito-semiBold";
+    text-align: center;
+}
+
+.service--sec1--div5 {
+    margin-top: 1rem;
+}
+
+.service--sec1--span3 {
+    font-family: "nunito-ExtraBold";
+    ;
+    color: var(--primary-color);
+}
+
+.service--sec1--a1 {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: "nunito-bold";
+    /* text-decoration: underline; */
+}
+
+@media (min-width: 600px) {
+    .service--sec1--div1 {
+        height: 65vh;
+    }
+
+    .service--sec1--span1 {
+        font-size: 2.5rem;
+    }
+
+    .service--sec1--span2 {
+        font-size: var(--subtopic-fontSize-tablet);
+    }
+
+    .service--sec1--div4 {
+        padding-top: 4rem;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .card-container,
+    .cards,
+    .about-cards,
+    .about--sec3--div3 {
+        column-gap: 3rem;
+        row-gap: 2rem;
+    }
+
+    .service--sec1--div1 {
+        height: 70vh;
+    }
+
+    .service--sec1--span1 {
+        font-size: 3rem;
+    }
+
+    .service--sec1--span2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .service--sec1--div1 {
+        height: 80vh;
+    }
+
+    .service--sec1--span1 {
+        font-size: var(--topic-fontSize-desktop);
+    }
+
+    .service--sec1--span2 {
+        font-size: var(--subtopic-fontSize-desktop);
+    }
+
+    .service--sec1--span3 {
+        font-size: 1.5rem;
+    }
+}
+
+/*============================================================== End Hero Section ==============================================================*/
+
+
+/*============================================================== Section 2 ==============================================================*/
+
+.about--sec2--div1 {
+    overflow-x: hidden;
+}
+
+.about--sec2--div2 {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.about--sec2--div3 {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about--sec2--div4 {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about--sec2--div5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.about--sec2--span1 {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: var(--topic-fontSize-mobile);
+    margin-bottom: 0.5rem;
+}
+
+.about--sec2--span2 {
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.about--sec2-div6 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about--sec2--img1 {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+}
+
+.about--sec2--div7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 5rem;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .about--sec2--div4 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        column-gap: 2rem;
+        max-width: none;
+        align-items: center;
+        padding: 2rem;
+        height: auto;
+
+
+    }
+
+    .about--sec2--div5 {
+        width: 100%;
+        align-items: flex-start;
+        /* background-color: red; */
+    }
+
+    .about--sec2--div6 {
+        width: 100%;
+    }
+
+    .about--sec2--span1 {
+        font-size: var(--topic-fontSize-tablet);
+        margin-bottom: 1rem;
+    }
+
+    .about--sec2--span2 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .about--sec2--img1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .about--sec2--div7 {
+        display: block;
+        width: 8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about--sec2--div4 {
+        column-gap: 3rem;
+        padding: 3rem 2rem;
+    }
+
+    .about--sec2--span1 {
+        font-size: var(--topic-fontSize-desktop)
+    }
+
+    .about--sec2--span2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about--sec2--div4 {
+        column-gap: 2rem;
+        padding: 4rem 2rem;
+    }
+
+    .about--sec2--img1 {
+        width: 28rem;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .about--sec2--img1 {
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .about--sec2--div7 {
+        width: 12rem;
+    }
+}
+
+/*============================================================== End Section 2 ==============================================================*/
+
+
+/*============================================================== Section 3 ==============================================================*/
+
+.about--sec3--div1 {
+    overflow-x: hidden;
+}
+
+.about--sec3--div2 {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.about--sec3--div3 {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about--sec3--div4 {
+    display: none;
+}
+
+.about--sec3--div5 {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about--sec3--div7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about--sec3--span1 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: var(--topic-fontSize-mobile);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about--sec3--span2 {
+    color: var(--dark-color);
+    text-align: justify;
+    font-family: "nunito-regular";
+    ;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.about--sec3--div8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about--sec3--span3 {
+    font-family: "nunito-bold";
+    font-size: 1.1rem;
+}
+
+.about--sec3--span4 {
+    font-family: "nunito-regular";
+    font-weight: 400;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.about--sec3--div6 {
+    background-image: url(../_resources/images/about_1/2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    border-radius: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    .about--sec3--div3 {
+        position: relative;
+        align-items: stretch;
+        overflow: hidden;
+    }
+
+    .about--sec3--div4 {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--primary-color);
+        width: 7rem;
+        height: 100%;
+        z-index: 1;
+        align-self: stretch;
+    }
+
+    .about--sec3--div5 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 2rem;
+        max-width: none;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .about--sec3--div6 {
+        width: 100%;
+        height: 17rem;
+    }
+
+    .about--sec3--div7 {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .about--sec3--span1 {
+        text-align: left;
+    }
+
+    .about--sec3--span2 {
+        text-align: left;
+    }
+
+    .about--sec3--div8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about--sec3--div5 {
+        padding: 2rem 2rem 2rem 2rem;
+        /* gap: 3rem; */
+    }
+
+    .about--sec3--div6 {
+        width: 80%;
+    }
+
+    .about--sec3--span1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .about--sec3--div5 {
+        padding: 3rem 2rem;
+    }
+
+    .about--sec3--div6 {
+        width: 80%;
+        height: 17rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about--sec3--div4 {
+        width: 8rem;
+    }
+
+    .about--sec3--div5 {
+        padding: 4rem 3.5rem;
+        gap: 2rem;
+    }
+
+    .about--sec3--span1 {
+        font-size: var(--topic-fontSize-desktop);
+    }
+
+    .about--sec3--div6 {
+        height: 20rem;
+        width: 60%;
+    }
+
+}
+
+/*============================================================== End Section 3 ==============================================================*/
+
+
+/*============================================================== Section 4 ==============================================================*/
+
+.about--sec4--div1 {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.about--sec4--div2 {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about--sec4--div3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    /* Vertical spacing for mobile */
+    padding: 1rem 0;
+}
+
+/* Card Styling (shared where possible) */
+.about--sec4--div4,
+.about--sec4--div8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 31px -8px var(--dark-color);
+    transition: all 0.3s ease;
+}
+
+.about--sec4--div4:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 12px 35px -8px var(--dark-color);
+}
+
+
+.about--sec4--div8:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 12px 35px -8px var(--dark-color);
+}
+
+.about--sec4--div4 {
+    background-color: var(--primary-color);
+}
+
+.about--sec4--div8 {
+    /* background-color: green; */
+}
+
+/* Inner card elements */
+.about--sec4--div5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: auto;
+}
+
+.about--sec4--img1 {
+    width: 100%;
+    height: auto;
+}
+
+.about--sec4--div6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.about--sec4--div7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Typography */
+.about--sec4--span1 {
+    color: var(--secondary-color);
+    font-family: "playfair-Display-bold";
+    font-size: 2rem;
+}
+
+.about--sec4--span2 {
+    color: var(--secondary-color);
+    font-family: "nunito-regular";
+}
+
+.about--sec4--span3 {
+    color: var(--dark-color);
+    font-family: "playfair-Display-bold";
+    font-size: 2rem;
+}
+
+.about--sec4--span4 {
+    color: var(--dark-color);
+    font-family: "nunito-regular";
+}
+
+/* ===== Responsive ===== */
+
+@media screen and (min-width: 500px) {
+    .about--sec4--div3 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* ✅ Allow wrapping */
+        justify-content: center;
+        align-items: stretch;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        /* Optional: if you want space between wrapped rows */
+        padding: 2rem 0;
+    }
+
+    .about--sec4--div4,
+    .about--sec4--div8 {
+        flex: 1 1 calc(50% - 0.5rem);
+        /* ✅ Grow, shrink, preferred width with gap */
+        max-width: none;
+        margin: 0;
+        /* Remove auto margin when in row */
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .about--sec4--div3 {
+        max-width: 730px;
+        height: auto;
+        margin: 0 auto;
+        /* display: flex; */
+        /* flex-direction: row; */
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .about--sec4--div4,
+    .about--sec4--div8 {
+        flex: 1 1 calc(40% - 0.5rem);
+        /* Adjust as needed */
+    }
+
+    .about--sec4--div3 {
+        gap: 5rem;
+    }
+}
+
+/*============================================================== End Section 4 ==============================================================*/
+
+
+/*==============================================================  Section 5 ==============================================================*/
+
+.package--sec4 {
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.package--sec4--div1 {
+    margin: 0;
+    padding: 0 1rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.package--sec4--div2 {
+    max-width: 1360px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.package--sec3--div4 {
+    width: 28%;
+    min-width: 320px;
+    max-width: 350px;
+    height: 30rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.package--sec4--div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.package--sec4--span1 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: var(--topic-fontSize-desktop);
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.package--sec4--span2 {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: var(--subtopic-fontSize-desktop);
+    color: var(--text-color);
+    max-width: 600px;
+    text-align: center;
+}
+
+
+.package--sec4--div5 {
+    width: 100%;
+    position: relative;
+    padding-bottom: 105px;
+}
+
+
+.package--sec4--div6 {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 380px;
+}
+
+
+.package--sec4--card7 {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.package--sec4--img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.package--sec4--div6:hover .package--sec4--img1 {
+    transform: scale(1.05);
+}
+
+.package--sec4--div8 {
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.package--sec4--span3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.package--sec4--span4 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: left;
+    display: block;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.owl-carousel .owl-nav button {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem !important;
+}
+
+.owl-carousel .owl-nav button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 1.5rem;
+}
+
+.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+    background-color: #ddd;
+    border-radius: 50%;
+    display: block;
+    height: 12px;
+    width: 12px;
+    transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span,
+.owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  border: none !important;
+  background: transparent !important;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  outline: none;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+  /* transform: scale(1.1); */
+}
+
+/* SVG layout */
+.owl-carousel .owl-nav svg.slider-arrow {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* === DEFAULT STATE === */
+.owl-carousel .owl-nav .arrow-bg {
+  fill: var(--primary-color);
+  stroke: none;
+}
+
+.owl-carousel .owl-nav .arrow-icon {
+  stroke: white;
+  transition: stroke 0.2s ease;
+}
+
+/* === HOVER STATE === */
+.owl-carousel .owl-nav .owl-prev:hover .arrow-bg,
+.owl-carousel .owl-nav .owl-next:hover .arrow-bg {
+  fill: transparent;
+  stroke: var(--primary-color);
+  stroke-width: 2;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover .arrow-icon,
+.owl-carousel .owl-nav .owl-next:hover .arrow-icon {
+  stroke: var(--primary-color);
+}
+
+.slider-nav:hover {
+  /* transform: scale(1.1); */
+}
+
+/* SVG layout */
+.slider-arrow {
+  display: block;
+}
+
+/* === DEFAULT STATE === */
+.arrow-bg {
+  fill: var(--primary-color); 
+  stroke: none;
+}
+
+.arrow-icon {
+  stroke: white;
+  transition: stroke 0.2s ease;
+}
+
+/* === HOVER STATE === */
+.slider-nav:hover .arrow-bg {
+  fill: transparent;
+  stroke: var(--primary-color); 
+  stroke-width: 2;
+}
+
+.slider-nav:hover .arrow-icon {
+  stroke: var(--primary-color);
+}
+
+
+@media (max-width: 767px) {
+    .package--sec4--div1 {
+        padding: 0 0.5rem;
+    }
+
+    .package--sec4--div4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .package--sec4--div6 {
+        margin: 0 5px;
+        height: 350px;
+    }
+
+    .package--sec4--span1 {
+        font-size: var(--topic-fontSize-mobile);
+        color: var(--dark-color);
+        font-family: "playfair-Display-bold";
+        text-align: center;
+
+    }
+
+    .package--sec4--span2 {
+        font-size: var(--subtopic-fontSize-mobile);
+        color: var(--dark-color);
+        font-family: "playfair-Display-regular";
+        text-align: center;
+    }
+
+    .package--sec4--div8 {
+        padding: 1rem;
+    }
+
+    .package--sec4--span3 {
+        font-size: 1.2rem;
+    }
+
+    .package--sec4--span4 {
+        font-size: 0.9rem;
+    }
+
+    .owl-carousel .owl-nav {
+        bottom: 10px;
+    }
+
+    .owl-carousel .owl-nav button {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .owl-carousel .owl-nav button {
+        display: none !important;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .package--sec4--div6 {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .package--sec4--span1 {
+        font-size: 2.2rem;
+    }
+
+    .package--sec4--span2 {
+        font-size: 1.2rem;
+    }
+
+    .package--sec4--div6 {
+        height: 420px;
+    }
+}
+
+
+/*============================================================== End Section 5 ==============================================================*/
