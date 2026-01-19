@@ -1,0 +1,335 @@
+@font-face {
+    font-family: "nunito-bold";
+    src: url("../_resources/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraBold";
+    src: url("../_resources/fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraLight";
+    src: url("../_resources/fonts/Nunito-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "nunito-light";
+    src: url("../_resources/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+    font-family: "nunito-mediam";
+    src: url("../_resources/fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+    font-family: "nunito-regular";
+    src: url("../_resources/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunito-semiBold";
+    src: url("../_resources/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-bold";
+    src: url("../_resources/fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-extraBold";
+    src: url("../_resources/fonts/PlayfairDisplay-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "payfair-Display-mediam";
+    src: url("../_resources/fonts/PlayfairDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-regular";
+    src: url("../_resources/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-semiBold";
+    src: url("../_resources/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #EEEFFC;
+    --dark-color: #030511;
+    --topic-fontSize-desktop: 3rem;
+    --subtopic-fontSize-desktop: 2rem;
+    --topic-fontSize-mobile: 1.5rem;
+    --subtopic-fontSize-mobile: 1.2rem;
+    --topic-fontSize-tablet: 1.8rem;
+    --subtopic-fontSize-tablet: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*============================================================ Hero Section ============================================================*/
+/* Hero Section Styles */
+.service--sec1--div1 {
+    background-image: url(../_resources/images/banner/1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service--sec1--div1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 7, 14, 0.581);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.service--sec1--div2 {
+    max-width: 1400px;
+    padding: 1rem;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.service--sec1--div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.service--sec1--div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.service--sec1--span1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+}
+
+/*============================================================= section 2 =============================================================*/
+.privacy--sec2 {
+    padding: 0;
+    position: relative;
+    z-index: 5;
+}
+
+.privacy--sec2--div1 {
+    padding: 1rem;
+}
+
+.privacy-sec2--div2 {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.privacy--sec2--div3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 2rem;
+}
+
+.privacy--sec2--div4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(145deg, #f8fafc 0%, #ffffff 100%);
+    border-radius: 16px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.privacy--sec2--div4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.privacy--sec2--div4:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.15);
+}
+
+.privacy--sec2--div5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+
+.privacy--sec2--span1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    line-height: 1.3;
+}
+
+.privacy--sec2--div6 {
+    display: flex;
+    margin-left: 0;
+    padding-left: 1rem;
+}
+
+.privacy--sec2--span2 {
+    font-family: "nunito-regular";
+    font-weight: 400;
+}
+
+.privacy--sec2--list1 {
+    font-family: "nunito-regular";
+    list-style: circle;
+    line-height: 1rem;
+    padding: 0;
+}
+
+.privacy--sec2--item1 {
+    margin-bottom: 0.8rem;
+    /* padding-left: 1.5rem; */
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.privacy--sec2--div7 {
+    color: var(--dark-color);
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.privacy--sec2--div8 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.privacy--sec2--div8 .privacy--sec2--span1 {
+    /* color: white; */
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.privacy--sec2--div9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.privacy--sec2--span3 {
+    font-family: "nunito-regular";
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.privacy--sec2--span4 {
+    font-family: "nunito-regular";
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .privacy--sec2--div3 {
+        padding: 1.5rem;
+    }
+
+    .privacy--sec2--div4 {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .privacy--sec2--span1 {
+        font-size: 1.5rem;
+    }
+
+    .privacy--sec2--div6 {
+        padding-left: 2.5rem;
+    }
+
+    .privacy--sec2--div7 {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .service--sec1--div1 {
+        height: 65vh;
+    }
+}
+
+@media (min-width: 800px) {
+    .service--sec1--div1 {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    .service--sec1--div1 {
+        height: 80vh;
+    }
+}
+
+/*============================================================ End Section 2 ============================================================*/
