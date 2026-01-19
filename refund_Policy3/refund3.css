@@ -1,0 +1,349 @@
+@font-face {
+    font-family: "nunito-bold";
+    src: url("../_resources/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraBold";
+    src: url("../_resources/fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraLight";
+    src: url("../_resources/fonts/Nunito-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "nunito-light";
+    src: url("../_resources/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+    font-family: "nunito-mediam";
+    src: url("../_resources/fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+    font-family: "nunito-regular";
+    src: url("../_resources/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunito-semiBold";
+    src: url("../_resources/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-bold";
+    src: url("../_resources/fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-extraBold";
+    src: url("../_resources/fonts/PlayfairDisplay-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "payfair-Display-mediam";
+    src: url("../_resources/fonts/PlayfairDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-regular";
+    src: url("../_resources/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-semiBold";
+    src: url("../_resources/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #EEEFFC;
+    --dark-color: #030511;
+    --topic-fontSize-desktop: 3rem;
+    --subtopic-fontSize-desktop: 2rem;
+    --topic-fontSize-mobile: 1.5rem;
+    --subtopic-fontSize-mobile: 1.2rem;
+    --topic-fontSize-tablet: 1.8rem;
+    --subtopic-fontSize-tablet: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*============================================ Section 1 ============================================*/
+
+.packages2--sec1--div1 {
+    background-image: url("../_resources/images/banner/3.webp");
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 3;
+}
+
+.packages2--sec1--div1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 21, 0.929);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.packages2--sec1--div2 {
+    max-width: 1400px;
+    padding: 1rem;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.packages2--sec1--div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.packages2--sec1--span1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "playfair-Display-extraBold";
+    color: var(--secondary-color);
+}
+
+.packages2--sec1--span2 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "nunito-regular";
+    padding: 0.94rem 1.88rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3.13rem;
+}
+
+@media screen and (min-width: 600px) {
+    .packages2--sec1--span1 {
+        font-size: 2.5rem;
+    }
+
+    .packages2--sec1--span2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .packages2--sec1--span1 {
+        font-size: 4rem;
+    }
+
+    .packages2--sec1--span2 {
+        font-size: 2;
+    }
+}
+
+/*============================================ End Section 1 ============================================*/
+
+
+
+
+
+
+/*============================================================= Section 2 - Full-Width Color-Banded Design =============================================================*/
+
+.privacy--sec2--div1 {
+    max-width:1350px;
+    margin: 0 auto;
+}
+
+.privacy-sec2--div2 {
+    box-shadow: 0 1.2rem 3.7rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    backdrop-filter: blur(0.6rem);
+}
+
+.privacy--sec2--div3 {
+    padding: 1rem;
+}
+
+.privacy--sec2--div4 {
+    margin-bottom: 2.5rem;
+    padding: 1.8rem;
+    background: var(--secondary-color);
+    border-left: 0.3125rem solid #1A237E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.privacy--sec2--div4:hover {
+    transform: translateX(0.625rem);
+    box-shadow: 0 0.625rem 1.875rem rgba(102, 126, 234, 0.3);
+}
+
+.privacy--sec2--div5 {
+    margin-bottom: 0.9375rem;
+}
+
+.privacy--sec2--span1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+    position: relative;
+    padding-bottom: 0.625rem;
+    font-family: "playfair-Display-bold";
+}
+
+.privacy--sec2--span1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3.75rem;
+    height: 0.1875rem;
+    border-radius: 0.125rem;
+}
+
+.privacy--sec2--div6 {
+    padding-left: 0.625rem;
+}
+
+.privacy--sec2--span2 {
+    color: var(--dark-color);
+    line-height: 1.8;
+    display: block;
+    font-family: "nunito-regular";
+    text-align: justify;
+
+}
+
+.privacy--sec2--list1 {
+    list-style: none;
+    padding: 0;
+        font-family: "nunito-regular";
+
+}
+
+.privacy--sec2--item1 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+    padding-left: 1.875rem;
+    position: relative;
+    line-height: 1.8;
+}
+
+.privacy--sec2--item1::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.privacy--sec2--div7 {
+    background: var(--primary-color);
+    padding: 3.125rem 3.75rem;
+    color: white;
+    text-align: center;
+}
+
+.privacy--sec2--div8 {
+    margin-bottom: 1.25rem;
+}
+
+.privacy--sec2--span1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-family: "playfair-Display-bold";
+}
+
+ .privacy--sec2--span1::after {
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.privacy--sec2--div9 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+}
+
+.privacy--sec2--span3 {
+    color: rgba(255, 255, 255, 0.9);
+        font-family: "nunito-regular";
+
+}
+
+.privacy--sec2--span4 {
+    font-weight: 600;
+    color: white;
+    padding: 0.9375rem 1.875rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3.125rem;
+    display: inline-block;
+    backdrop-filter: blur(0.625rem);
+    border: 0.125rem solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-family: "nunito-bold";
+}
+
+.privacy--sec2--span4:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.2);
+}
+
+.contact11{
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .privacy--sec2--div3 {
+        padding: 1.875rem 1.25rem;
+    }
+
+    .privacy--sec2--div4 {
+        padding: 1.25rem;
+    }
+
+    .privacy--sec2--span1 {
+        font-size: 1.25rem;
+    }
+
+    .privacy--sec2--span2,
+    .privacy--sec2--item1 {
+        font-size: 0.875rem;
+    }
+
+    .privacy--sec2--div7 {
+        padding: 1.875rem 1.25rem;
+    }
+
+    .privacy--sec2--div8 .privacy--sec2--span1 {
+        font-size: 1.5rem;
+    }
+}

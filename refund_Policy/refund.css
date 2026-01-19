@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "nunito-bold";
+    src: url("../_resources/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraBold";
+    src: url("../_resources/fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraLight";
+    src: url("../_resources/fonts/Nunito-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "nunito-light";
+    src: url("../_resources/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+    font-family: "nunito-mediam";
+    src: url("../_resources/fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+    font-family: "nunito-regular";
+    src: url("../_resources/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunito-semiBold";
+    src: url("../_resources/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-bold";
+    src: url("../_resources/fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-extraBold";
+    src: url("../_resources/fonts/PlayfairDisplay-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "payfair-Display-mediam";
+    src: url("../_resources/fonts/PlayfairDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-regular";
+    src: url("../_resources/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-semiBold";
+    src: url("../_resources/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #EEEFFC;
+    --dark-color: #030511;
+    --topic-fontSize-desktop: 3rem;
+    --subtopic-fontSize-desktop: 2rem;
+    --topic-fontSize-mobile: 1.5rem;
+    --subtopic-fontSize-mobile: 1.2rem;
+    --topic-fontSize-tablet: 1.8rem;
+    --subtopic-fontSize-tablet: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*============================================================ Hero Section ============================================================*/
+
+.service--sec1--div1 {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 70vh;
+    /* small default height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service--sec1--div2 {
+    max-width: 1400px;
+    padding: 1rem;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.service--sec1--div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.service--sec1--div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding-top: 2rem;
+}
+
+.service--sec1--span1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "playfair-Display-extraBold";
+    color: var(--secondary-color);
+}
+
+
+.service--sec1--div5 {
+    margin-top: 1rem;
+}
+
+.service--sec1--span3 {
+    font-family: "nunito-ExtraBold";
+    color: var(--secondary-color);
+}
+
+.service--sec1--a1 {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: "nunito-bold";
+    /* text-decoration: underline; */
+}
+
+@media (min-width: 600px) {
+    .service--sec1--div1 {
+        height: 65vh;
+    }
+
+    .service--sec1--span1 {
+        font-size: 2.5rem;
+    }
+
+    .service--sec1--span2 {
+        font-size: var(--subtopic-fontSize-tablet);
+    }
+
+    .service--sec1--div4 {
+        padding-top: 4rem;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .card-container,
+    .cards,
+    .about-cards,
+    .about--sec3--div3 {
+        column-gap: 3rem;
+        row-gap: 2rem;
+    }
+
+    .service--sec1--div1 {
+        height: 70vh;
+    }
+
+    .service--sec1--span1 {
+        font-size: 3rem;
+    }
+
+    .service--sec1--span2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .service--sec1--div1 {
+        height: 80vh;
+    }
+
+    .service--sec1--span1 {
+        font-size: var(--topic-fontSize-desktop);
+    }
+
+    .service--sec1--span2 {
+        font-size: var(--subtopic-fontSize-desktop);
+    }
+
+    .service--sec1--span3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*============================================================ End Hero Section ============================================================*/
+
+
+
+/*============================================================  Section 2 ============================================================*/
+
+.privacy--sec2--div1 {
+    padding: 1rem;
+}
+
+.privacy-sec2--div2 {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.privacy--sec2--div3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy--sec2--div4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.privacy--sec2--div5 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.privacy--sec2--span1 {
+    font-family: "playfair-Display-bold";
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.privacy--sec2--div6 {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.privacy--sec2--span2 {
+    font-family: "nunito-regular";
+    color: var(--dark-color);
+}
+
+.privacy--sec2--list1 {
+    color: var(--dark-color);
+    font-family: "nunito-regular";
+}
+
+.privacy--sec2--item1 {
+    margin-bottom: 0.3rem;
+}
+
+.list {
+    padding-left: 1rem;
+}
+
+.privacy--sec2--div8 {
+    margin-bottom: 1rem;
+}
+
+.privacy--sec2--span3 {
+    font-family: "nunito-regular";
+    margin-bottom: 1rem;
+
+}
+
+.privacy--sec2--div9{
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy--sec2--span4 {
+    font-family: "nunito-regular";
+    margin-top: 1rem;
+}
+
+
+/*============================================================ End Section 2 ============================================================*/
