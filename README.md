@@ -21,7 +21,9 @@ Travel Mate is a dynamic web application designed to help travelers discover des
 * `Home/` & other modules - Core website functionality with multiple UI versions.
 
 ## Project Preview
-![Project Screenshot](screenshot.png)
+![Project Screenshot](ss1.png)
+
+![Project Screenshot](ss2.png)
 
 ---
 **Developed by:** Isuru Shehan  
