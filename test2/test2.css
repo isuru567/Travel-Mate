@@ -1,0 +1,351 @@
+@font-face {
+  font-family: "nunito-bold";
+  src: url("../_resources/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "nunito-ExtraBold";
+  src: url("../_resources/fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "nunito-ExtraLight";
+  src: url("../_resources/fonts/Nunito-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "nunito-light";
+  src: url("../_resources/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+  font-family: "nunito-mediam";
+  src: url("../_resources/fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+  font-family: "nunito-regular";
+  src: url("../_resources/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: "nunito-semiBold";
+  src: url("../_resources/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "playfair-Display-bold";
+  src: url("../_resources/fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: "playfair-Display-extraBold";
+  src: url("../_resources/fonts/PlayfairDisplay-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "payfair-Display-mediam";
+  src: url("../_resources/fonts/PlayfairDisplay-Medium.ttf");
+}
+
+@font-face {
+  font-family: "playfair-Display-regular";
+  src: url("../_resources/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "playfair-Display-semiBold";
+  src: url("../_resources/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+
+:root {
+  --primary-color: #1A237E;
+  --secondary-color: #EEEFFC;
+  --dark-color: #030511;
+  --topic-fontSize-desktop: 2rem;
+  --subtopic-fontSize-desktop: 1.5rem;
+  --topic-fontSize-mobile: 1.5rem;
+  --subtopic-fontSize-mobile: 1.2rem;
+  --topic-fontSize-tablet: 1.8rem;
+  --subtopic-fontSize-tablet: 1.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* margin-top: 9rem; */
+  padding: 0 1rem;
+}
+
+.card {
+  width: 100%;
+  height: 80px;
+  border-radius: 4rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+  box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a227e9d;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card>* {
+  position: relative;
+  z-index: 2;
+}
+
+.card>.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card>.row>.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  height: 50px;
+}
+
+.card>.row>.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1rem;
+  flex: 1;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+input {
+  display: none;
+}
+
+input:checked+label {
+  height: 20rem;
+}
+
+input:checked+label .description {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+.slider--icon {
+  width: auto;
+  height: 40px;
+  object-fit: contain;
+}
+
+.home--sec4--div9 {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.home--sec4--span3 {
+  font-size: 1.6rem;
+  font-family: "playfair-Display-bold";
+  margin-bottom: 0.2rem;
+}
+
+.home--sec4--span4 {
+  font-family: "playfair-Display-regular";
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.home--sec4--span5 {
+  text-align: justify;
+  margin-right: 0.3rem;
+}
+
+.home--sec4--divextra {
+  display: none;
+}
+
+.home--sec4--btn1 {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "nunito-bold";
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.home--sec4--btn1:hover {
+  background: transparent;
+  border: 0.2rem solid var(--secondary-color);
+}
+
+@media (min-width: 400px) {
+  .home--sec4--divextra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6rem;
+  }
+
+  .home--sec4--list1{
+    list-style: "⭐";
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+    height: 20rem;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .card {
+    width: 100px;
+    height: 100%;
+    align-items: flex-end;
+    margin: 0 5px;
+  }
+
+  .card>.row {
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  
+
+  .card>.row>.description {
+    height: 80px;
+    width: 300px;
+    margin-left: 1rem;
+    transform: translateY(20px);
+  }
+
+  input:checked+label {
+    width: 500px;
+    height: 100%;
+  }
+
+  input:checked+label .description {
+    transform: translateY(0) !important;
+  }
+
+  .home--sec4--div9{
+    margin-bottom: 13rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 900px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 30rem;
+    gap: 0.75rem;
+    padding-left: 1rem;
+  }
+
+  .card {
+    width: 9rem;
+    margin: 0 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    border-radius: 5rem;
+  }
+
+  .card>.row>.icon {
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(10px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .card>.row>.description {
+    height: 80px;
+    width: 520px;
+    transform: translateY(30px);
+  }
+
+  .description p {
+    font-size: 1rem;
+    padding-top: 5px;
+  }
+
+  .description h4 {
+    font-size: 1.1rem;
+  }
+
+  input:checked+label {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    height: 33rem;
+  }
+}
+
+.card[for="c1"] {
+  background-image: url(../_resources/images/home/sec4/1.webp);
+}
+
+.card[for="c2"] {
+  background-image: url(../_resources/images/home/sec4/2.webp);
+}
+
+.card[for="c3"] {
+  background-image: url(../_resources/images/home/sec4/3.webp);
+}
+
+.card[for="c4"] {
+  background-image: url(../_resources/images/home/sec4/4.webp);
+}
+
+.card[for="c5"] {
+  background-image: url(../_resources/images/home/sec4/5.webp);
+
+}

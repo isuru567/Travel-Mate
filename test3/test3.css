@@ -1,0 +1,466 @@
+@font-face {
+    font-family: "nunito-bold";
+    src: url("../_resources/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraBold";
+    src: url("../_resources/fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "nunito-ExtraLight";
+    src: url("../_resources/fonts/Nunito-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "nunito-light";
+    src: url("../_resources/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+    font-family: "nunito-mediam";
+    src: url("../_resources/fonts/Nunito-Medium.ttf");
+}
+
+@font-face {
+    font-family: "nunito-regular";
+    src: url("../_resources/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunito-semiBold";
+    src: url("../_resources/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-bold";
+    src: url("../_resources/fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-extraBold";
+    src: url("../_resources/fonts/PlayfairDisplay-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "payfair-Display-mediam";
+    src: url("../_resources/fonts/PlayfairDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-regular";
+    src: url("../_resources/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "playfair-Display-semiBold";
+    src: url("../_resources/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #EEEFFC;
+    --dark-color: #030511;
+    --topic-fontSize-desktop: 2rem;
+    --subtopic-fontSize-desktop: 1.5rem;
+    --topic-fontSize-mobile: 1.5rem;
+    --subtopic-fontSize-mobile: 1.2rem;
+    --topic-fontSize-tablet: 1.8rem;
+    --subtopic-fontSize-tablet: 1.4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.testamonial--sec--div1 {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.testamonial--sec--div2 {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.testamonial--sec--div3 {
+    width: 100%;
+}
+
+/* Header section */
+.testamonial--sec--div4 {
+    text-align: center;
+    /* margin-bottom: 3rem; */
+}
+
+.testamonial--sec--span1 {
+    display: block;
+    font-size: var(--topic-fontSize-mobile);
+    font-weight: 800;
+    color: var(--dark-color);
+    /* margin-bottom: 0.75rem; */
+    font-family: "playfair-Display-bold";
+}
+
+.testamonial--sec--span2 {
+    display: block;
+    font-size: var(--subtopic-fontSize-mobile);
+    color: var(--dark-color);
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "playfair-Display-regular";
+}
+
+/* Owl Carousel Container */
+.testamonial--sec--div5.owl-carousel {
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+/* Individual testimonial cards */
+.testamonial--sec--div6 {
+    padding: 0.75rem;
+}
+
+.testamonial--sec--div7 {
+    background: var(--secondary-color);
+    backdrop-filter: blur(0.625rem);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    /* box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1); */
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.testamonial--sec--div7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.25rem;
+}
+
+.testamonial--sec--div7:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+/* Avatar section */
+.testamonial--sec--div8 {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.1875rem solid #667eea;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.testamonial--sec--img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Star rating */
+.testamonial--sec--div9 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.star {
+    font-size: 1.125rem;
+    margin: 0 0.125rem;
+    filter: drop-shadow(0 0.125rem 0.125rem rgba(255, 193, 7, 0.3));
+}
+
+/* Testimonial text */
+.testamonial--sec--span3 {
+    line-height: 1.6;
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 1.25rem;
+    font-family: "nunito-regular";
+    flex-grow: 1;
+}
+
+/* Customer info */
+.testamonial--sec--div10 {
+    text-align: center;
+    border-top: 0.0625rem solid #e2e8f0;
+    padding-top: 1rem;
+}
+
+.testamonial--sec--div10 .testamonial--sec--span3 {
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #2d3748;
+    margin-bottom: 0.25rem;
+    font-style: normal;
+}
+
+.testamonial--sec--span4 {
+    font-size: 0.875rem;
+    color: #718096;
+    font-weight: 500;
+    font-family: "playfair-Display-regular";
+}
+
+/* Owl Carousel Navigation Dots */
+.testamonial--sec--div5.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.testamonial--sec--div5.owl-carousel .owl-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.testamonial--sec--div5.owl-carousel .owl-dot.active,
+.testamonial--sec--div5.owl-carousel .owl-dot:hover {
+    background: #ffffff;
+    box-shadow: 0 0.125rem 0.5rem rgba(255, 255, 255, 0.5);
+}
+
+.testamonial--sec--div5.owl-carousel .owl-nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2rem;
+    z-index: 10;
+    margin-bottom: 1.5rem;
+}
+
+.testamonial--sec--div5.owl-carousel .owl-nav button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testamonial--sec--div5.owl-carousel .owl-nav button:hover {
+    /* transform: scale(1.1); */
+}
+
+.testamonial--sec--div5.owl-carousel .owl-nav button img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+/* Testimonial Arrow Styling */
+.testimonial-arrow {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.testimonial-arrow .arrow-bg {
+  fill: var(--primary-color); /* Blue background */
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.testimonial-arrow .arrow-icon {
+  stroke: white; /* White arrow */
+  transition: stroke 0.3s ease;
+}
+
+/* Hover Effect */
+.owl-nav button:hover .arrow-bg {
+  fill: transparent;
+  stroke: var(--primary-color);
+  stroke-width: 2;
+}
+
+.owl-nav button:hover .arrow-icon {
+  stroke: var(--primary-color); /* Blue arrow on hover */
+}
+
+/* Ensure buttons are properly sized */
+.testamonial--sec--div5.owl-carousel .owl-nav {
+  position: absolute;
+  bottom: -2rem; /* Adjust based on your layout */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+  z-index: 10;
+}
+
+.testamonial--sec--div5.owl-carousel .owl-nav button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.testamonial--sec--div5.owl-carousel .owl-nav button:hover {
+  /* transform: scale(1.1); */
+}
+@media (min-width: 600px) {
+    .testamonial--section {
+        padding: 0 2rem;
+    }
+
+    .testamonial--sec--span1 {
+        font-size: 2.25rem;
+    }
+
+    .testamonial--sec--span2 {
+        font-size: 1.125rem;
+    }
+
+    .testamonial--sec--div6 {
+        padding: 1rem;
+    }
+
+    .testamonial--sec--div7 {
+        padding: 2rem;
+    }
+
+    .testamonial--sec--div8 {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .testamonial--sec--span3 {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .testamonial--sec--div10 .testamonial--sec--span3 {
+        font-size: 1.06rem;
+    }
+
+    .star {
+        font-size: 1.25rem;
+        margin: 0 0.18rem;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1000px) {
+    .testamonial--section {
+        padding: 0 2rem;
+    }
+
+    .testamonial--sec--span1 {
+        font-size: 2.75rem;
+    }
+
+    .testamonial--sec--span2 {
+        font-size: 1.25rem;
+    }
+
+    .testamonial--sec--div6 {
+        padding: 1.25rem;
+    }
+
+    .testamonial--sec--div7 {
+        padding: 2.5rem;
+    }
+
+    .testamonial--sec--div8 {
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .testamonial--sec--span3 {
+        font-size: 1.0625rem;
+        margin-bottom: 2rem;
+    }
+
+    .testamonial--sec--div10 .testamonial--sec--span3 {
+        font-size: 1.125rem;
+    }
+
+    .star {
+        font-size: 1.375rem;
+        margin: 0 0.25rem;
+    }
+
+    .testamonial--sec--div5.owl-carousel .owl-nav {
+        gap: 2rem;
+    }
+
+    .testamonial--sec--div5.owl-carousel .owl-nav button {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .testamonial--sec--div5.owl-carousel .owl-nav button img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .testamonial--sec--div5.owl-carousel .owl-nav button img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .testamonial--section {
+        padding: 0 2rem;
+    }
+
+    .testamonial--sec--span1 {
+        font-size: 3.25rem;
+    }
+
+    .testamonial--sec--span2 {
+        font-size: 1.375rem;
+    }
+
+    .testamonial--sec--div7 {
+        padding: 3rem;
+    }
+
+    .testamonial--sec--span3 {
+        font-size: 1.125rem;
+    }
+}
